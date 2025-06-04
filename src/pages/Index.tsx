@@ -1,4 +1,3 @@
-
 import { useState, useEffect } from 'react';
 import { Moon, Sun, ChevronUp, Menu, X } from 'lucide-react';
 import Hero from '../components/Hero';
@@ -9,12 +8,15 @@ import Certifications from '../components/Certifications';
 import Contact from '../components/Contact';
 
 const Index = () => {
-  const [isDark, setIsDark] = useState(false);
+  const [isDark, setIsDark] = useState(true); // Set dark theme as default
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [showBackToTop, setShowBackToTop] = useState(false);
   const [activeSection, setActiveSection] = useState('home');
 
   useEffect(() => {
+    // Apply dark theme on initial load
+    document.documentElement.classList.add('dark');
+    
     const handleScroll = () => {
       setShowBackToTop(window.scrollY > 500);
       
