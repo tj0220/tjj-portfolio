@@ -8,59 +8,22 @@ interface ProjectsProps {
 const Projects = ({ isDark }: ProjectsProps) => {
   const projects = [
     {
-      title: 'Aadhaar Verification System',
-      description: 'A secure verification system using machine learning for document authentication and fraud detection.',
-      image: 'https://images.unsplash.com/photo-1461749280684-dccba630e2f6?auto=format&fit=crop&w=800&q=80',
-      technologies: ['Python', 'OpenCV', 'Machine Learning', 'Flask'],
-      github: '#',
-      demo: '#',
-      category: 'Machine Learning'
-    },
-    {
-      title: 'Expense Tracker Application',
-      description: 'Full-stack web application for personal finance management with data visualization and budgeting features.',
-      image: 'https://images.unsplash.com/photo-1488590528505-98d2b5aba04b?auto=format&fit=crop&w=800&q=80',
-      technologies: ['React', 'Django', 'PostgreSQL', 'Chart.js'],
-      github: '#',
-      demo: '#',
-      category: 'Full Stack'
-    },
-    {
       title: 'Employee Management System',
-      description: 'Comprehensive HR management platform with role-based access control and performance analytics.',
-      image: 'https://images.unsplash.com/photo-1531297484001-80022131f5a1?auto=format&fit=crop&w=800&q=80',
-      technologies: ['Django', 'React', 'MySQL', 'REST API'],
-      github: '#',
-      demo: '#',
+      description: 'A web-based employee management system built using Python and Django for streamlined workforce tracking and organization.',
+      image: 'https://images.unsplash.com/photo-1461749280684-dccba630e2f6?auto=format&fit=crop&w=800&q=80',
+      technologies: ['Python', 'Django','MySQl'],
+      github: 'https://github.com/tj0220/Employee-management-system.git',
       category: 'Full Stack'
     },
     {
-      title: 'Cancer Therapy Stakeholder Analysis',
-      description: 'Data analysis project examining treatment outcomes and stakeholder relationships in cancer therapy.',
-      image: 'https://images.unsplash.com/photo-1487058792275-0ad4aaf24ca7?auto=format&fit=crop&w=800&q=80',
-      technologies: ['Python', 'Pandas', 'Matplotlib', 'Statistical Analysis'],
-      github: '#',
-      demo: '#',
-      category: 'Data Science'
+      title: 'Weather Prediction App',
+      description: 'A mobile weather prediction app developed in Android Studio using real-time data from a weather API.',
+      image: 'https://images.unsplash.com/photo-1488590528505-98d2b5aba04b?auto=format&fit=crop&w=800&q=80',
+      technologies: ['Android Studio', 'Java', 'OpenWeather API'],
+      github: 'https://github.com/tj0220/Weather-App.git',
+      category: 'Mobile Application'
     },
-    {
-      title: 'Portfolio Website',
-      description: 'Modern, responsive portfolio website with dark/light theme and smooth animations.',
-      image: 'https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=800&q=80',
-      technologies: ['React', 'TypeScript', 'Tailwind CSS', 'Framer Motion'],
-      github: '#',
-      demo: '#',
-      category: 'Frontend'
-    },
-    {
-      title: 'Data Visualization Dashboard',
-      description: 'Interactive dashboard for exploring complex datasets with real-time analytics and insights.',
-      image: 'https://images.unsplash.com/photo-1605810230434-7631ac76ec81?auto=format&fit=crop&w=800&q=80',
-      technologies: ['Python', 'Dash', 'Plotly', 'Pandas'],
-      github: '#',
-      demo: '#',
-      category: 'Data Science'
-    }
+    
   ];
 
   return (
@@ -136,24 +99,14 @@ const Projects = ({ isDark }: ProjectsProps) => {
                     <Github size={16} className="mr-2" />
                     Code
                   </a>
-                  <a
-                    href={project.demo}
-                    className="flex items-center px-4 py-2 bg-gradient-to-r from-blue-600 to-purple-600 text-white rounded-lg hover:scale-105 transition-transform"
-                  >
-                    <ExternalLink size={16} className="mr-2" />
-                    Demo
-                  </a>
+                 
                 </div>
               </div>
             </div>
           ))}
         </div>
 
-        <div className="text-center mt-12">
-          <button className="px-8 py-3 bg-gradient-to-r from-blue-600 to-purple-600 text-white rounded-lg hover:scale-105 transition-transform duration-300">
-            View All Projects
-          </button>
-        </div>
+        
       </div>
     </div>
   );

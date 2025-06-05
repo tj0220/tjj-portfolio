@@ -1,4 +1,3 @@
-
 import { User, Award, Users, ExternalLink } from 'lucide-react';
 
 interface AboutProps {
@@ -21,6 +20,7 @@ const About = ({ isDark }: AboutProps) => {
         </div>
 
         <div className="grid lg:grid-cols-2 gap-12 items-center">
+          {/* Left Column */}
           <div className="space-y-6">
             <div className={`p-6 rounded-xl ${isDark ? 'bg-gray-900' : 'bg-white'} shadow-lg hover:shadow-xl transition-shadow duration-300`}>
               <div className="flex items-center mb-4">
@@ -56,17 +56,30 @@ const About = ({ isDark }: AboutProps) => {
               </p>
             </div>
 
-            <div className="flex space-x-4">
-              <button className="flex items-center px-6 py-3 bg-gradient-to-r from-blue-600 to-purple-600 text-white rounded-lg hover:scale-105 transition-transform duration-300">
+            {/* Button Group - moved outside the grid */}
+            <div className="flex space-x-4 pt-2">
+              <a 
+                href="/TEJASWINI BASKAR CV...pdf"
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="flex items-center px-6 py-3 bg-gradient-to-r from-blue-600 to-purple-600 text-white rounded-lg hover:scale-105 transition-transform duration-300"
+              >
                 <ExternalLink size={20} className="mr-2" />
                 View Resume
-              </button>
-              <button className="flex items-center px-6 py-3 bg-blue-600 text-white rounded-lg hover:scale-105 transition-transform duration-300">
+              </a>
+
+              <a 
+                href="https://www.linkedin.com/in/tejaswini-baskar-650627287/"
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="flex items-center px-6 py-3 bg-blue-600 text-white rounded-lg hover:scale-105 transition-transform duration-300"
+              >
                 LinkedIn Profile
-              </button>
+              </a>
             </div>
           </div>
 
+          {/* Right Column - Image */}
           <div className="relative">
             <div className={`w-full h-96 rounded-xl overflow-hidden shadow-xl ${isDark ? 'bg-gray-700' : 'bg-gray-200'}`}>
               <img 

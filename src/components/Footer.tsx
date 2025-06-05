@@ -10,20 +10,20 @@ const Footer = ({ isDark }: FooterProps) => {
 
   const socialLinks = [
     {
-      icon: <Github size={24} />,
-      href: '#',
+      icon: <Github size={28} />,
+      href: 'https://github.com/tj0220',
       label: 'GitHub',
-      color: 'hover:text-gray-900 dark:hover:text-white'
+      color: 'hover:text-gray-700 dark:hover:text-white'
     },
     {
-      icon: <Linkedin size={24} />,
-      href: '#',
-      label: 'LinkedIn',
+      icon: <Linkedin size={28} />,
+      href: 'https://www.linkedin.com/in/tejaswini-baskar-650627287/',
+      label:'LinkedIn',
       color: 'hover:text-blue-600'
     },
     {
-      icon: <Mail size={24} />,
-      href: 'mailto:your.email@example.com',
+      icon: <Mail size={28} />,
+      href: 'mailto:tejaswinibaskarworkspace@gmail.com',
       label: 'Email',
       color: 'hover:text-red-600'
     }
@@ -47,7 +47,7 @@ const Footer = ({ isDark }: FooterProps) => {
           {/* Left Section */}
           <div className="text-center md:text-left">
             <h3 className="text-xl font-bold bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent mb-2">
-              Your Name
+              Tejaswini Baskar
             </h3>
             <p className={`text-sm ${isDark ? 'text-gray-400' : 'text-gray-600'}`}>
               Data Science Student & Aspiring Full-Stack Developer
@@ -93,7 +93,7 @@ const Footer = ({ isDark }: FooterProps) => {
         <div className="mt-8 pt-8 border-t border-gray-700 dark:border-gray-600">
           <div className="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
             <p className={`text-sm ${isDark ? 'text-gray-400' : 'text-gray-600'} flex items-center`}>
-              © {currentYear} Made with <Heart size={16} className="text-red-500 mx-1" /> by Your Name
+              © {currentYear} Made with <Heart size={16} className="text-red-500 mx-1" /> by Tejaswini Baskar
             </p>
             <p className={`text-sm ${isDark ? 'text-gray-400' : 'text-gray-600'}`}>
               Designed for excellence • Built with React & Tailwind CSS

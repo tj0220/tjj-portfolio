@@ -84,7 +84,7 @@ const Hero = ({ isDark }: HeroProps) => {
             <div className="w-32 h-32 mx-auto relative">
               <div className="absolute inset-0 bg-gradient-to-r from-blue-600 via-purple-600 to-pink-600 rounded-full animate-spin-slow opacity-75"></div>
               <img 
-                src="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?auto=format&fit=crop&w=400&q=80"
+                src='/pass photo.jpg'
                 alt="Profile"
                 className="relative w-full h-full object-cover rounded-full border-4 border-white shadow-xl"
               />
@@ -94,7 +94,7 @@ const Hero = ({ isDark }: HeroProps) => {
           <h1 className="text-5xl md:text-7xl font-bold mb-6">
             <span className={isDark ? 'text-white' : 'text-gray-900'}>Hi, I'm </span>
             <span className="bg-gradient-to-r from-blue-600 via-purple-600 to-pink-600 bg-clip-text text-transparent animate-pulse">
-              Your Name
+              Tejaswini Baskar
             </span>
           </h1>
           
@@ -116,56 +116,83 @@ const Hero = ({ isDark }: HeroProps) => {
 
           {/* Enhanced Action Buttons */}
           <div className="flex flex-col sm:flex-row gap-6 justify-center mb-12">
-            <button className="group px-8 py-4 bg-gradient-to-r from-blue-600 to-purple-600 text-white rounded-xl font-semibold hover:scale-105 transition-all duration-300 shadow-xl hover:shadow-2xl relative overflow-hidden">
-              <span className="relative z-10 flex items-center justify-center">
+            
+           <button
+              onClick={() => {
+                const element = document.getElementById("projects");
+                element?.scrollIntoView({ behavior: "smooth" });
+              }}
+              className="group px-8 py-4 bg-gradient-to-r from-blue-500 to-purple-600 text-white rounded-lg shadow-lg hover:scale-105 transition-transform"
+            >
+              <span className="relative z-10 flex items-center">
                 <Code size={20} className="mr-2" />
                 View My Work
               </span>
-              <div className="absolute inset-0 bg-gradient-to-r from-purple-600 to-pink-600 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
             </button>
+
             
-            <button 
-              onClick={handleDownloadResume}
-              className={`group px-8 py-4 border-2 rounded-xl font-semibold hover:scale-105 transition-all duration-300 shadow-lg relative overflow-hidden ${
-                isDark 
-                  ? 'border-gray-300 text-gray-300 hover:bg-gray-300 hover:text-gray-900' 
-                  : 'border-gray-900 text-gray-900 hover:bg-gray-900 hover:text-white'
-              }`}
-            >
-              <span className="relative z-10 flex items-center justify-center">
-                <Download size={20} className="mr-2" />
-                Download Resume
-              </span>
-            </button>
+            
+            <a
+  href="/TEJASWINI BASKAR CV...pdf"
+  download
+  className={`group px-8 py-4 border-2 rounded-xl font-semibold hover:scale-105 transition-all duration-300 shadow-lg relative overflow-hidden ${
+    isDark 
+      ? 'border-gray-300 text-gray-300 hover:bg-gray-300 hover:text-gray-900' 
+      : 'border-gray-900 text-gray-900 hover:bg-gray-900 hover:text-white'
+  }`}
+>
+  <span className="relative z-10 flex items-center justify-center">
+    <Download size={20} className="mr-2" />
+    Download Resume
+  </span>
+</a>
+
           </div>
 
           {/* Enhanced Social Links */}
-          <div className="flex justify-center space-x-6 mb-12">
-            {[
-              { icon: <Github size={28} />, href: '#', color: 'hover:text-gray-700 dark:hover:text-white' },
-              { icon: <Linkedin size={28} />, href: '#', color: 'hover:text-blue-600' },
-              { icon: <Mail size={28} />, href: 'mailto:your.email@example.com', color: 'hover:text-red-600' }
-            ].map((social, index) => (
-              <a 
-                key={index}
-                href={social.href} 
-                className={`group p-4 rounded-xl transition-all duration-300 hover:scale-110 transform shadow-lg ${
-                  isDark ? 'bg-gray-800/50 hover:bg-gray-700/70' : 'bg-white/50 hover:bg-white/80'
-                } backdrop-blur-sm ${social.color}`}
-              >
-                <div className="transition-transform duration-300 group-hover:rotate-12">
-                  {social.icon}
-                </div>
-              </a>
-            ))}
-          </div>
+<div className="flex justify-center space-x-6 mb-12">
+  {[
+    {
+      icon: <Github size={28} />,
+      href: 'https://github.com/tj0220',
+      color: 'hover:text-gray-700 dark:hover:text-white'
+    },
+    {
+      icon: <Linkedin size={28} />,
+      href: 'https://www.linkedin.com/in/tejaswini-baskar-650627287/',
+      color: 'hover:text-blue-600'
+    },
+    {
+      icon: <Mail size={28} />,
+      href: 'mailto:tejaswinibaskarworkspace@gmail.com',
+      color: 'hover:text-red-600'
+    }
+  ].map((social, index) => (
+    <a
+      key={index}
+      href={social.href}
+      target="_blank"
+      rel="noopener noreferrer"
+      className={`group p-4 rounded-xl transition-all duration-300 hover:scale-110 transform shadow-lg ${
+        isDark
+          ? 'bg-gray-800/50 hover:bg-gray-700/70'
+          : 'bg-white/50 hover:bg-white/80'
+      } backdrop-blur-sm ${social.color}`}
+    >
+      <div className="transition-transform duration-300 group-hover:rotate-12">
+        {social.icon}
+      </div>
+    </a>
+  ))}
+</div>
+
 
           {/* Stats */}
           <div className="grid grid-cols-2 md:grid-cols-4 gap-6 mb-12 max-w-3xl mx-auto">
             {[
-              { label: 'Projects', value: '15+' },
+              { label: 'Projects', value: '10+' },
               { label: 'Technologies', value: '20+' },
-              { label: 'Certifications', value: '8+' },
+              { label: 'Certifications', value: '6+'},
               { label: 'Experience', value: '2+ Years' }
             ].map((stat, index) => (
               <div key={index} className={`p-4 rounded-xl backdrop-blur-sm ${
@@ -182,13 +209,6 @@ const Hero = ({ isDark }: HeroProps) => {
           </div>
         </div>
 
-        {/* Enhanced Scroll Indicator */}
-        <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce">
-          <div className="flex flex-col items-center space-y-2">
-            <span className={`text-sm ${isDark ? 'text-gray-400' : 'text-gray-600'}`}>Scroll to explore</span>
-            <ArrowDown size={32} className={`${isDark ? 'text-gray-400' : 'text-gray-600'} animate-pulse`} />
-          </div>
-        </div>
       </div>
     </div>
   );

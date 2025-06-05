@@ -94,15 +94,15 @@ const Contact = ({ isDark }: ContactProps) => {
                   icon: <Mail className="text-white" size={24} />,
                   gradient: 'from-blue-600 to-purple-600',
                   title: 'Email',
-                  value: 'your.email@example.com',
-                  href: 'mailto:your.email@example.com'
+                  value: 'tejaswinibaskarworkspace@gmail.com',
+                  href: 'mailto:tejaswinibaskarworkspace@gmail.com'
                 },
                 {
                   icon: <Phone className="text-white" size={24} />,
                   gradient: 'from-green-600 to-blue-600',
                   title: 'Phone',
-                  value: '+91 12345 67890',
-                  href: 'tel:+911234567890'
+                  value: '+91 9789067436',
+                  href: 'tel:+919789067436'
                 },
                 {
                   icon: <MapPin className="text-white" size={24} />,
@@ -130,9 +130,21 @@ const Contact = ({ isDark }: ContactProps) => {
               <h4 className="font-semibold mb-6 text-xl">Follow My Journey</h4>
               <div className="flex space-x-4">
                 {[
-                  { icon: <Github size={24} />, href: '#', color: 'hover:bg-gray-700' },
-                  { icon: <Linkedin size={24} />, href: '#', color: 'hover:bg-blue-600' },
-                  { icon: <Twitter size={24} />, href: '#', color: 'hover:bg-blue-400' }
+                   {
+      icon: <Github size={28} />,
+      href: 'https://github.com/tj0220',
+      color: 'hover:text-gray-700 dark:hover:text-white'
+    },
+    {
+      icon: <Linkedin size={28} />,
+      href: 'https://www.linkedin.com/in/tejaswini-baskar-650627287/',
+      color: 'hover:text-blue-600'
+    },
+    {
+      icon: <Mail size={28} />,
+      href: 'mailto:tejaswinibaskarworkspace@gmail.com',
+      color: 'hover:text-red-600'
+    }
                 ].map((social, index) => (
                   <a
                     key={index}
@@ -277,31 +289,38 @@ const Contact = ({ isDark }: ContactProps) => {
 
         {/* Call-to-Action */}
         <div className="text-center mt-20">
-          <div className={`p-8 rounded-2xl ${isDark ? 'bg-gray-900' : 'bg-white'} shadow-2xl max-w-4xl mx-auto relative overflow-hidden`}>
-            <div className="absolute inset-0 bg-gradient-to-r from-blue-600/10 via-purple-600/10 to-pink-600/10"></div>
-            <div className="relative z-10">
-              <h3 className="text-3xl font-bold mb-4 bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">
-                Ready to Innovate Together?
-              </h3>
-              <p className={`text-lg mb-8 ${isDark ? 'text-gray-300' : 'text-gray-600'}`}>
-                I'm currently open to exciting opportunities, challenging projects, and meaningful collaborations. 
-                Let's create something extraordinary that makes a real impact!
-              </p>
-              <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                <button className="px-8 py-4 bg-gradient-to-r from-blue-600 to-purple-600 text-white rounded-xl hover:scale-105 transition-transform duration-300 font-semibold shadow-lg">
-                  Schedule a Call
-                </button>
-                <button className={`px-8 py-4 border-2 rounded-xl hover:scale-105 transition-all duration-300 font-semibold ${
-                  isDark 
-                    ? 'border-gray-300 text-gray-300 hover:bg-gray-300 hover:text-gray-900' 
-                    : 'border-gray-900 text-gray-900 hover:bg-gray-900 hover:text-white'
-                }`}>
-                  View Resume
-                </button>
-              </div>
-            </div>
-          </div>
-        </div>
+  <div className={`p-8 rounded-2xl ${isDark ? 'bg-gray-900' : 'bg-white'} shadow-2xl max-w-4xl mx-auto relative overflow-hidden`}>
+    <div className="absolute inset-0 bg-gradient-to-r from-blue-600/10 via-purple-600/10 to-pink-600/10"></div>
+    <div className="relative z-10">
+      <h3 className="text-3xl font-bold mb-4 bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">
+        Ready to Innovate Together?
+      </h3>
+      <p className={`text-lg mb-8 ${isDark ? 'text-gray-300' : 'text-gray-600'}`}>
+        I'm currently open to exciting opportunities, challenging projects, and meaningful collaborations. 
+        Let's create something extraordinary that makes a real impact!
+      </p>
+      <div className="flex flex-col sm:flex-row gap-4 justify-center">
+        <button
+          onClick={() => window.open('https://calendly.com/tejaswinibaskarworkspace/30min', '_blank')}
+          className="px-8 py-4 bg-gradient-to-r from-blue-600 to-purple-600 text-white rounded-xl hover:scale-105 transition-transform duration-300 font-semibold shadow-lg"
+        >
+          Schedule a Call
+        </button>
+        <button
+          onClick={() => window.open('TEJASWINI BASKAR CV...pdf', '_blank')}
+          className={`px-8 py-4 border-2 rounded-xl hover:scale-105 transition-all duration-300 font-semibold ${
+            isDark
+              ? 'border-gray-300 text-gray-300 hover:bg-gray-300 hover:text-gray-900'
+              : 'border-gray-900 text-gray-900 hover:bg-gray-900 hover:text-white'
+          }`}
+        >
+          View Resume
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+
       </div>
     </div>
   );

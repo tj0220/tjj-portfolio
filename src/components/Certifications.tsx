@@ -8,58 +8,59 @@ interface CertificationsProps {
 const Certifications = ({ isDark }: CertificationsProps) => {
   const certifications = [
     {
-      title: 'Machine Learning Specialization',
-      provider: 'Coursera - Stanford University',
+      title: 'Python for Data Science',
+      provider: 'NPTEL',
       date: '2024',
-      description: 'Comprehensive course covering supervised and unsupervised learning, neural networks, and best practices.',
-      logo: 'https://images.unsplash.com/photo-1649972904349-6e44c42644a7?auto=format&fit=crop&w=200&q=80',
-      skills: ['Machine Learning', 'Python', 'Neural Networks', 'TensorFlow'],
-      credentialUrl: '#'
+      description: 'An NPTEL course covering fundamental Python programming concepts and their applications in data analysis, data visualization, and statistical modeling for data science.',
+      logo: 'https://th.bing.com/th/id/R.9db67594bfa0cf76654d9ac490af9ab7?rik=MSyz3EPBSCSuYg&riu=http%3a%2f%2fvcwjes.edu.in%2fvcwlib%2fwp-content%2fuploads%2f2017%2f03%2fnptel_logo.png&ehk=K%2b8ikKowP8VTeEgts4O%2bWyckPJrL6rPa8KLZIq%2fzKJo%3d&risl=&pid=ImgRaw&r=0',
+      skills: ['Data Analysis', 'Python', 'Neural network', 'TensorFlow'],
+      credentialUrl: '/Python for Data Science.pdf'
     },
     {
-      title: 'Deep Learning Specialization',
-      provider: 'Coursera - deeplearning.ai',
+      title: 'AWS CLOUD FOUNDATIONS BADGE',
+      provider: 'AWS',
       date: '2024',
-      description: 'Advanced deep learning concepts including CNNs, RNNs, and transformer architectures.',
-      logo: 'https://images.unsplash.com/photo-1488590528505-98d2b5aba04b?auto=format&fit=crop&w=200&q=80',
-      skills: ['Deep Learning', 'CNNs', 'RNNs', 'Computer Vision'],
-      credentialUrl: '#'
+      description: 'An AWS course covering fundamental cloud concepts and their applications in data analysis, data visualization, and statistical modeling for data science.',
+      logo:'https://th.bing.com/th/id/OIP.NyXAci3xUQt1zXNlJPb4FQHaEK?rs=1&pid=ImgDetMain',
+      skills: ['AWS', 'Cloud Computing', 'Data Analysis', 'Data Visualization'],
+      credentialUrl: 'https://www.credly.com/badges/56cd66df-ee8a-44a2-89dc-4bed9af7b1cd/linked_in?t=sfq9ji'
+    },
+      
+    {
+      title: 'AIML EduSkills Virtual Internship',
+      provider: 'AICTE',
+      date: '2024',
+      description: 'Completed a virtual internship focused on practical AI and Machine Learning projects, enhancing skills in data analysis, model building, and algorithm implementation.',
+      logo: 'https://assets.thehansindia.com/h-upload/2022/12/26/1327093-o.webp',
+      skills: ['Artificial Intelligence', 'Machine Learning', 'Data Analysis', 'Model Building', 'Algorithm Implementation'],
+      credentialUrl: '/aiml.jpg'
     },
     {
-      title: 'Data Science Professional Certificate',
-      provider: 'IBM - Coursera',
-      date: '2023',
-      description: 'End-to-end data science workflow from data collection to model deployment.',
-      logo: 'https://images.unsplash.com/photo-1461749280684-dccba630e2f6?auto=format&fit=crop&w=200&q=80',
-      skills: ['Data Science', 'SQL', 'Data Visualization', 'Statistics'],
-      credentialUrl: '#'
+      title: 'C++ Programming',
+      provider: 'Scaler Topics',
+      date: '2024',
+      description: 'Comprehensive course on C++ fundamentals, covering object-oriented programming, data structures, and efficient problem-solving techniques.',
+      logo:'https://play-lh.googleusercontent.com/CUTEE0Q3qo4kiFK20N9_MmJdBtO-QZpuDhQEfMU1HneFSbmPLf7UiympkbFVITH1pZA',
+      skills: [
+    'C++ Programming',
+    'Object-Oriented Programming (OOP)',
+    'Data Structures',
+    'Algorithms'],
+      credentialUrl: '/c++.jpg'
     },
+    
     {
-      title: 'Python for Data Science and AI',
-      provider: 'IBM - Coursera',
-      date: '2023',
-      description: 'Python programming fundamentals for data science and artificial intelligence applications.',
-      logo: 'https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?auto=format&fit=crop&w=200&q=80',
-      skills: ['Python', 'Pandas', 'NumPy', 'Data Analysis'],
-      credentialUrl: '#'
-    },
-    {
-      title: 'Full Stack Web Development',
+      title: 'C Programming',
       provider: 'Udemy',
       date: '2023',
-      description: 'Complete web development bootcamp covering frontend and backend technologies.',
-      logo: 'https://images.unsplash.com/photo-1531297484001-80022131f5a1?auto=format&fit=crop&w=200&q=80',
-      skills: ['React', 'Django', 'JavaScript', 'HTML/CSS'],
-      credentialUrl: '#'
-    },
-    {
-      title: 'SQL for Data Science',
-      provider: 'Coursera - University of California, Davis',
-      date: '2023',
-      description: 'Advanced SQL techniques for data manipulation, analysis, and database management.',
-      logo: 'https://images.unsplash.com/photo-1487058792275-0ad4aaf24ca7?auto=format&fit=crop&w=200&q=80',
-      skills: ['SQL', 'Database Design', 'Data Modeling', 'PostgreSQL'],
-      credentialUrl: '#'
+      description: 'In-depth C programming course covering basics to advanced topics including pointers, memory management, and problem-solving.',
+      logo:'https://th.bing.com/th/id/OIP.tVHImC715kuoK3qLMsUOfAHaHa?rs=1&pid=ImgDetMain',
+      skills: ['C Programming',
+    'Pointers',
+    'Memory Management',
+    'Control Structures',
+    'Data Types'],
+      credentialUrl: 'c.jpg'
     }
   ];
 
