@@ -26,7 +26,7 @@ const Projects = ({ isDark }: ProjectsProps) => {
     {
   title: 'FETUS – Intelligent Fetal Monitoring System',
   description: 'Developed an advanced AI-driven fetal monitoring system using hybrid signal processing ',
-  image: 'https://images.unsplash.com/photo-1580281657527-47e4b77bd83e?auto=format&fit=crop&w=800&q=80',
+image: 'https://images.unsplash.com/photo-1580281657527-47e4b77bd83e?auto=format&fit=crop&w=800&q=80',
   technologies: [
     'Python', 
     'FastAPI', 
