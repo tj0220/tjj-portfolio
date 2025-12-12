@@ -207,7 +207,7 @@ const Hero = ({ isDark }: HeroProps) => {
           {/* Stats */}
           <div className="grid grid-cols-2 md:grid-cols-4 gap-6 mb-12 max-w-3xl mx-auto">
             {[
-              { label: 'Projects', value: '10+' },
+              { label: 'Projects', value: '5+' },
               { label: 'Technologies', value: '20+' },
               { label: 'Certifications', value: '6+' },
               { label: 'Experience', value: '2+ Years' }

@@ -23,6 +23,23 @@ const Projects = ({ isDark }: ProjectsProps) => {
       github: 'https://github.com/tj0220/Weather-App.git',
       category: 'Mobile Application'
     },
+    {
+  title: 'FETUS – Intelligent Fetal Monitoring System',
+  description: 'Developed an advanced AI-driven fetal monitoring system using hybrid signal processing (MAML, BiLSTM, ICA/PCA, adaptive filters, Doppler–PPG fusion) to enhance fetal HR extraction by ~40%. Built a FastAPI microservices backend for real-time vitals streaming and FHIR storage, integrated telemedicine assistants with LangChain + RAG, and led hardware R&D with optical and stretchable bio-sensing modules. Designed a multimodal fetal-risk scoring system and CNN-based maternal–fetal distress predictor achieving ~35% improvement in early-risk detection.',
+  image: 'https://www.bing.com/images/search?view=detailV2&ccid=3yTLmnoi&id=A19204A3A42F316FAC4D02E20CF47AC44CD5C7F4&thid=OIP.3yTLmnoiOXut9s_YnQV0ZAHaH0&mediaurl=https%3A%2F%2Fthumbs.dreamstime.com%2Fz%2Fgraphic-representation-digital-art-showing-intrauterine-life-artistic-way-illustration-fetus-inside-mother-s-uterus-343399800.jpg&exph=1690&expw=1600&q=fetus+and+mother+graphic+image&FORM=IRPRST&ck=38865B348D97B2AFD16080E6FAE87076&selectedIndex=3&itb=0&cw=1222&ch=572&ajaxhist=0&ajaxserp=0',
+  technologies: [
+    'Python', 
+    'FastAPI', 
+    'MAML', 
+    'BiLSTM', 
+    'XGBoost', 
+    'Random Forest',  
+    'RAG', 
+  ],
+  github: 'https://github.com/tj0220',   // replace with actual repo if needed
+  category: 'AI/ML + Healthcare'
+},
+
     
   ];
 

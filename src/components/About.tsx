@@ -39,9 +39,9 @@ const About = ({ isDark }: AboutProps) => {
                 <Award className="text-purple-600 mr-3" size={24} />
                 <h3 className="text-xl font-semibold">Current Role</h3>
               </div>
-               <p className={isDark ? 'text-gray-300' : 'text-gray-600'}>
-                <strong>Corporate Head</strong> at SRM Data Science Club: Directed corporate outreach and partnerships, driving 
-sponsorship acquisition and event success. 
+              
+              <p className={isDark ? 'text-gray-300' : 'text-gray-600'}>
+                <strong>AIML INTERN</strong> at F22 Labs Working on machine learning model development, data preprocessing, and real-world AI problem-solving as part of an industry project.
               </p>
             </div>
 
@@ -50,6 +50,10 @@ sponsorship acquisition and event success.
                 <Users className="text-green-600 mr-3" size={24} />
                 <h3 className="text-xl font-semibold">Leadership</h3>
               </div>
+              <p className={isDark ? 'text-gray-300' : 'text-gray-600'}>
+                <strong>Corporate Head</strong> at SRM Data Science Club: Directed corporate outreach and partnerships, driving 
+sponsorship acquisition and event success. 
+              </p>
               <p className={isDark ? 'text-gray-300' : 'text-gray-600'}>
                 <strong>College Coordinator</strong> at SRM Paarivendhar Student Association - Fostering community 
                 engagement and organizing events that bring students together.
