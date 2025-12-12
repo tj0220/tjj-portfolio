@@ -39,9 +39,9 @@ const About = ({ isDark }: AboutProps) => {
                 <Award className="text-purple-600 mr-3" size={24} />
                 <h3 className="text-xl font-semibold">Current Role</h3>
               </div>
-              <p className={isDark ? 'text-gray-300' : 'text-gray-600'}>
-                <strong>Creatives Head</strong> at Data Science Club - Leading creative initiatives and organizing 
-                workshops to make data science accessible and engaging for fellow students.
+               <p className={isDark ? 'text-gray-300' : 'text-gray-600'}>
+                <strong>Corporate Head</strong> at SRM Data Science Club: Directed corporate outreach and partnerships, driving 
+sponsorship acquisition and event success. 
               </p>
             </div>
 
@@ -54,10 +54,7 @@ const About = ({ isDark }: AboutProps) => {
                 <strong>College Coordinator</strong> at SRM Paarivendhar Student Association - Fostering community 
                 engagement and organizing events that bring students together.
               </p>
-              <p className={isDark ? 'text-gray-300' : 'text-gray-600'}>
-                <strong>Corporate Head</strong> at SRM Data Science Club: Directed corporate outreach and partnerships, driving 
-sponsorship acquisition and event success. 
-              </p>
+             
             </div>
 
             {/* Button Group - moved outside the grid */}
