@@ -18,7 +18,7 @@ const Projects = ({ isDark }: ProjectsProps) => {
     {
       title: 'Weather Prediction App',
       description: 'A mobile weather prediction app developed in Android Studio using real-time data from a weather API.',
-      image: 'https://images.unsplash.com/photo-1488590528505-98d2b5aba04b?auto=format&fit=crop&w=800&q=80',
+      image: 'https://images.unsplash.com/photo-1580281657527-47e4b77bd83e?auto=format&fit=crop&w=800&q=80',
       technologies: ['Android Studio', 'Java', 'OpenWeather API'],
       github: 'https://github.com/tj0220/Weather-App.git',
       category: 'Mobile Application'
