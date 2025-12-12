@@ -18,27 +18,46 @@ const Projects = ({ isDark }: ProjectsProps) => {
     {
       title: 'Weather Prediction App',
       description: 'A mobile weather prediction app developed in Android Studio using real-time data from a weather API.',
-      image: 'https://images.unsplash.com/photo-1580281657527-47e4b77bd83e?auto=format&fit=crop&w=800&q=80',
+      image: 'https://images.unsplash.com/photo-1488590528505-98d2b5aba04b?auto=format&fit=crop&w=800&q=80',
       technologies: ['Android Studio', 'Java', 'OpenWeather API'],
       github: 'https://github.com/tj0220/Weather-App.git',
       category: 'Mobile Application'
     },
-    {
-  title: 'FETUS – Intelligent Fetal Monitoring System',
-  description: 'Developed an advanced AI-driven fetal monitoring system using hybrid signal processing.',
-image: 'https://images.unsplash.com/photo-1580281657527-47e4b77bd83e?auto=format&fit=crop&w=800&q=80',
+   
+{
+  title: 'FarmBridge – Farmer to Consumer Marketplace',
+  description: 'Developed a farmer-centric platform to eliminate middlemen and enable direct, transparent transactions between farmers and consumers.',
+  image: 'https://images.unsplash.com/photo-1501004318641-b39e6451bec6?auto=format&fit=crop&w=800&q=80',
   technologies: [
-    'Python', 
-    'FastAPI', 
-    'MAML', 
-    'BiLSTM', 
-    'XGBoost', 
-    'Random Forest',  
-    'RAG', 
+    'Java',
+    'Spring Boot',
+    'Hibernate',
+    'SQL',
+    'AWS EC2',
+    'Apache Kafka'
   ],
-  github: 'https://github.com/tj0220',   // replace with actual repo if needed
-  category: 'AI/ML + Healthcare'
+  github: 'https://github.com/tj0220', // replace with actual repo link if available
+  category: 'Full Stack'
 },
+{
+  title: 'AGRO-AI – Meta-Learning Powered Agricultural Intelligence Platform',
+  description: 'Offline-first agricultural AI system featuring MAML yield prediction, smart irrigation, and CNN/3D-CNN disease diagnosis, enhanced with TFLite field detection and a multilingual LLM + MLOps stack.',
+  image: 'https://images.unsplash.com/photo-1501004318641-b39e6451bec6?auto=format&fit=crop&w=800&q=80',
+  technologies: [
+    'Python',
+    'MAML',
+    'CNN',
+    'TFLite',
+    'MLflow',
+    'ISRIC SoilGrids',
+    'AgriStack',
+    'RainBird IQ4'
+  ],
+  github: 'https://github.com/tj0220',  // replace with actual repo link if you upload it
+  category: 'AI/ML + Agriculture'
+},
+
+
 
     
   ];
