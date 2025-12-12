@@ -307,7 +307,7 @@ const Contact = ({ isDark }: ContactProps) => {
           Schedule a Call
         </button>
         <button
-          onClick={() => window.open('TEJASWINI BASKAR CV...pdf', '_blank')}
+          onClick={() => window.open('TEJASWINI BASKAR RESUME.pdf', '_blank')}
           className={`px-8 py-4 border-2 rounded-xl hover:scale-105 transition-all duration-300 font-semibold ${
             isDark
               ? 'border-gray-300 text-gray-300 hover:bg-gray-300 hover:text-gray-900'

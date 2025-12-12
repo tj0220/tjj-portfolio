@@ -54,12 +54,16 @@ const About = ({ isDark }: AboutProps) => {
                 <strong>College Coordinator</strong> at SRM Paarivendhar Student Association - Fostering community 
                 engagement and organizing events that bring students together.
               </p>
+              <p className={isDark ? 'text-gray-300' : 'text-gray-600'}>
+                <strong>Corporate Head</strong> at SRM Data Science Club: Directed corporate outreach and partnerships, driving 
+sponsorship acquisition and event success. 
+              </p>
             </div>
 
             {/* Button Group - moved outside the grid */}
             <div className="flex space-x-4 pt-2">
               <a 
-                href="/TEJASWINI BASKAR CV...pdf"
+                href="/TEJASWINI BASKAR RESUME.pdf"
                 target="_blank" 
                 rel="noopener noreferrer"
                 className="flex items-center px-6 py-3 bg-gradient-to-r from-blue-600 to-purple-600 text-white rounded-lg hover:scale-105 transition-transform duration-300"
