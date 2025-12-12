@@ -63,12 +63,12 @@ const Certifications = ({ isDark }: CertificationsProps) => {
       credentialUrl: 'c.jpg'
     },
     {
-  title: 'Networking Basics',
-  provider: 'Cisco Networking Academy',
-  date: '2024',
-  description: 'Foundational networking course covering IP addressing, routing, switching, network layers, protocols, and essential troubleshooting skills.',
-  logo: 'https://upload.wikimedia.org/wikipedia/commons/0/08/Cisco_logo_blue_2016.svg',
-  skills: [
+    title: 'Networking Basics',
+    provider: 'Cisco Networking Academy',
+    date: '2025',
+    description: 'Foundational networking course covering IP addressing, routing, switching, network layers, protocols, and essential troubleshooting skills.',
+    logo: 'https://upload.wikimedia.org/wikipedia/commons/0/08/Cisco_logo_blue_2016.svg',
+    skills: [
     'Networking Fundamentals',
     'IP Addressing & Subnetting',
     'Routing & Switching',
@@ -76,7 +76,7 @@ const Certifications = ({ isDark }: CertificationsProps) => {
     'Network Troubleshooting'
   ],
   credentialUrl: 'cisco.jpg'
-}
+},
 
   ];
 
