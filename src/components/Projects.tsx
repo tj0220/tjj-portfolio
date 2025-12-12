@@ -10,7 +10,7 @@ const Projects = ({ isDark }: ProjectsProps) => {
     {
       title: 'Employee Management System',
       description: 'A web-based employee management system built using Python and Django for streamlined workforce tracking and organization.',
-      image: 'https://images.unsplash.com/photo-1461749280684-dccba630e2f6?auto=format&fit=crop&w=800&q=80',
+      image: 'https://images.unsplash.com/photo-1526378722484-cc1544d123f8?auto=format&fit=crop&w=800&q=80',
       technologies: ['Python', 'Django','MySQl'],
       github: 'https://github.com/tj0220/Employee-management-system.git',
       category: 'Full Stack'
@@ -18,7 +18,7 @@ const Projects = ({ isDark }: ProjectsProps) => {
     {
       title: 'Weather Prediction App',
       description: 'A mobile weather prediction app developed in Android Studio using real-time data from a weather API.',
-      image: 'https://images.unsplash.com/photo-1488590528505-98d2b5aba04b?auto=format&fit=crop&w=800&q=80',
+      image: 'https://images.unsplash.com/photo-1500673922987-e212871fec22?auto=format&fit=crop&w=800&q=80',
       technologies: ['Android Studio', 'Java', 'OpenWeather API'],
       github: 'https://github.com/tj0220/Weather-App.git',
       category: 'Mobile Application'
